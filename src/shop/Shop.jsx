@@ -1,0 +1,52 @@
+import React from "react";
+import { useState } from "react";
+import Data from "../products.json";
+
+import PageHeader from "../components/PageHeader";
+import ProductCards from "./ProductCards";
+const showResults = "showing 01-12 0f 139 Results";
+const Shop = () => {
+  const [GridList, setGridList] = useState(true);
+  const [products, setproducts] = useState(Data);
+  console.log(products);
+  return (
+    <div>
+      <PageHeader title=" Our Shop Page" curPage="Shop" />
+      {/* shop page */}
+      <div className="shop-page padding-tb">
+        <div className="container">
+          <div className="row justify-content-center">
+            <div className="col-lg-8 col-12">
+              <article>
+                {/* layout and title here */}
+                <div className="shop-title d-flex flex-wrap justify-content-between ">
+                  <p>{showResults}</p>
+                  <div
+                    className={`product-view-mode ${
+                      GridList ? "gridActive" : "listActive"
+                    }`}
+                  >
+                    <a className="grid" onClick={() => setGridList(!GridList)}>
+                      <i className="icofont-ghost"></i>
+                    </a>
+
+                    <a className="list" onClick={() => setGridList(!GridList)}>
+                      <i className="icofont-listine-dots"></i>
+                    </a>
+                  </div>
+                </div>
+                {/* product cards */}
+                <div>
+                  <ProductCards GridList={GridList} products={products} />
+                </div>
+              </article>
+            </div>
+            <div className="col-lg-4 col-12">right side</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Shop;
