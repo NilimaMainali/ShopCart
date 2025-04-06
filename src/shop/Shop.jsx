@@ -1,14 +1,29 @@
 import React from "react";
 import { useState } from "react";
 import Data from "../products.json";
-
 import PageHeader from "../components/PageHeader";
 import ProductCards from "./ProductCards";
+import Pagination from "./Pagination";
 const showResults = "showing 01-12 0f 139 Results";
+import Search from "./Search";
+
 const Shop = () => {
   const [GridList, setGridList] = useState(true);
   const [products, setproducts] = useState(Data);
   console.log(products);
+  // pagination
+  const [currentPage, setCurrentPage] = useState(1);
+  const productsPerPage = 12;
+  const indexOfLastProduct = currentPage * productsPerPage;
+  const indexOfFirstProduct = indexOfLastProduct - productsPerPage;
+  const currentProducts = products.slice(
+    indexOfFirstProduct,
+    indexOfLastProduct
+  );
+  // function to change the current page
+  const paginate = (pageNumber) => {
+    setCurrentPage(pageNumber);
+  };
   return (
     <div>
       <PageHeader title=" Our Shop Page" curPage="Shop" />
@@ -37,11 +52,25 @@ const Shop = () => {
                 </div>
                 {/* product cards */}
                 <div>
-                  <ProductCards GridList={GridList} products={products} />
+                  <ProductCards
+                    GridList={GridList}
+                    products={currentProducts}
+                  />
                 </div>
               </article>
             </div>
-            <div className="col-lg-4 col-12">right side</div>
+            <div className="col-lg-4 col-12">
+              <aside>
+                <Search products={products}GridList={GridList}/>
+                
+              </aside>
+            </div>
+            <Pagination
+              productsPerPage={productsPerPage}
+              totalProducts={products.length}
+              paginate={paginate}
+              activePage={currentPage}
+            />
           </div>
         </div>
       </div>
