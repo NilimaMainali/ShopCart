@@ -22,6 +22,7 @@ import{
   createBrowserRouter,
   RouterProvider,
  } from"react-router-dom";
+import SingleProduct from './shop/SingleProduct.jsx'
  const router = createBrowserRouter([
   {
     path: "/",
@@ -36,6 +37,10 @@ import{
           {
             path: "/Shop",
             element:<Shop/>
+          },
+          {
+            path:"shop/:id",
+            element:<SingleProduct/>
           }
 
     ],
