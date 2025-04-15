@@ -4,7 +4,7 @@ const blogList = [
         imgAlt: 'Blog Thumb',
         title: 'Business Ueporting Rouncil Them Could Plan.',
         desc: 'Pluoresnts customize prancing apcentered customer service anding ands asing straelg Interacvely cordinate performe',
-        commentCount: '3',
+        commentCount: '6',
         btnText: 'Read More',
         metaList: [
             {
@@ -13,7 +13,7 @@ const blogList = [
             },
             {
                 iconName: 'icofont-calendar',
-                text: 'Jun 05,2022',
+                text: 'Feb 05,2025',
             },
         ],
     },
@@ -23,16 +23,16 @@ const blogList = [
         imgAlt: 'Blog Thumb',
         title: 'Financial Reporting Qouncil What Could More.',
         desc: 'Pluoresnts customize prancing apcentered customer service anding ands asing straelg Interacvely cordinate performe',
-        commentCount: '3',
+        commentCount: '4',
         btnText: 'Read More',
         metaList: [
             {
                 iconName: 'icofont-ui-user',
-                text: 'Rajib Raj',
+                text: 'Kabita Sharma',
             },
             {
                 iconName: 'icofont-calendar',
-                text: 'Jun 05,2022',
+                text: 'Feb 05,2025',
             },
         ],
     },
@@ -47,11 +47,11 @@ const blogList = [
         metaList: [
             {
                 iconName: 'icofont-ui-user',
-                text: 'Rajib Raj',
+                text: 'Bishal Ojha',
             },
             {
                 iconName: 'icofont-calendar',
-                text: 'Jun 05,2022',
+                text: 'Feb 05,2025',
             },
         ],
     },
@@ -61,16 +61,16 @@ const blogList = [
         imgAlt: 'Blog Thumb',
         title: 'Strategic Social Media and of visual design.',
         desc: 'Pluoresnts customize prancing apcentered customer service anding ands asing straelg Interacvely cordinate performe',
-        commentCount: '3',
+        commentCount: '2',
         btnText: 'Read More',
         metaList: [
             {
                 iconName: 'icofont-ui-user',
-                text: 'Rajib Raj',
+                text: 'Maya Dahal',
             },
             {
                 iconName: 'icofont-calendar',
-                text: 'Jun 05,2022',
+                text: 'Feb 05,2025',
             },
         ],
     },
@@ -85,11 +85,11 @@ const blogList = [
         metaList: [
             {
                 iconName: 'icofont-ui-user',
-                text: 'Rajib Raj',
+                text: 'Khushi Nepal',
             },
             {
                 iconName: 'icofont-calendar',
-                text: 'Jun 05,2022',
+                text: 'Feb 05,2025',
             },
         ],
     },
@@ -104,11 +104,11 @@ const blogList = [
         metaList: [
             {
                 iconName: 'icofont-ui-user',
-                text: 'Rajib Raj',
+                text: 'Nilima Mainali',
             },
             {
                 iconName: 'icofont-calendar',
-                text: 'Jun 05,2022',
+                text: 'Feb 05,2025',
             },
         ],
     },
@@ -123,11 +123,11 @@ const blogList = [
         metaList: [
             {
                 iconName: 'icofont-ui-user',
-                text: 'Rajib Raj',
+                text: 'Kanchan Mainali',
             },
             {
                 iconName: 'icofont-calendar',
-                text: 'Jun 05,2022',
+                text: 'Feb 05,2025',
             },
         ],
     },
@@ -142,11 +142,11 @@ const blogList = [
         metaList: [
             {
                 iconName: 'icofont-ui-user',
-                text: 'Rajib Raj',
+                text: 'Nilam Mainali',
             },
             {
                 iconName: 'icofont-calendar',
-                text: 'Jun 05,2022',
+                text: 'Feb 05,2025',
             },
         ],
     },
@@ -156,16 +156,16 @@ const blogList = [
         imgAlt: 'Blog Thumb',
         title: 'The Challenge Global Learning In Public Education.',
         desc: 'Pluoresnts customize prancing apcentered customer service anding ands asing straelg Interacvely cordinate performe',
-        commentCount: '3',
+        commentCount: '1',
         btnText: 'Read More',
         metaList: [
             {
                 iconName: 'icofont-ui-user',
-                text: 'Rajib Raj',
+                text: 'Nishma Mainali',
             },
             {
                 iconName: 'icofont-calendar',
-                text: 'Jun 05,2022',
+                text: 'Feb 05,2025',
             },
         ],
     },

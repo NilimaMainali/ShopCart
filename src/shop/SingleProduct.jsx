@@ -2,6 +2,12 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
 import PageHeader from "../components/PageHeader";
+import ProductDisplay from "./ProductDisplay";
+import Review from "./Review";
+import PopularPost from './PopularPost';
+import Tags from './Tags';
+
+
 
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -19,7 +25,7 @@ const SingleProduct = () => {
       .then((data) => setProduct(data));
   }, []);
   const result = product.filter((p) => p.id === id);
-  console.log(result);
+  // console.log(result);
   return (
     <div>
       <PageHeader title={"OUR SHOP SINGLE"} curPage={"Shop/single Product"} />
@@ -71,7 +77,7 @@ const SingleProduct = () => {
                       <div className="post-content">
                         <div>
                           {
-                            result.map(item => <p key={item.id}>{item.name}</p>)
+                            result.map(item => <ProductDisplay key={item.id} item={item}/>)
                           }
                         </div>
 
@@ -80,11 +86,19 @@ const SingleProduct = () => {
                   </div>
                 </div>
                 {/* reviews */}
-                <div className="review">Review</div>
+                <div className="review">
+                <Review/>
+                </div>
               </article>
             </div>
             {/* Right Side */}
-            <div className="col-lg-4 col-12">Right Side</div>
+            <div className="col-lg-4 col-12">
+              <aside className="ps-lg-4">
+                <PopularPost/>
+                <Tags/>
+
+              </aside>
+            </div>
           </div>
         </div>
       </div>
